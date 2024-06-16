@@ -17,7 +17,7 @@ Bulma CSS framework utilized for styling.
 Inline CSS utilized for feedback modal styling.
 
 # Screenshot
-
+ ![alt text](assets/To-The-Moon-screenshot.png)
 # Links
 https://github.com/ggpleasant692/To-The-Moon.git
 
