@@ -26,7 +26,9 @@
      </section>
   
      <input type="string" id="query" name="query" placeholder="Search by Artist..." />
+     <div>Search Count: <span id="searchCount">0</span></div>
     <button class="button is-danger button is-danger is-rounded button is-info is-small" id="btn" onclick = "changePage()">Search</button>
+    
     
     <section class="content">
         <article id="video player" class="player">
@@ -126,23 +128,13 @@
 
           
             <section id="dataContainer" class="has-text-centered">
-                
         
             </section>
         </article>
             <script src="./assets/ytapi.js"></script>       
         </article>    
     </section>
-
-    <div id="results">
-        <h2>Discography</h2>
-            <p id="discography"></p>
         <button><a href=index.html>Home</a></button>
     </div>  
-  
-    
-   
-
-    
 </body>
 </html>
