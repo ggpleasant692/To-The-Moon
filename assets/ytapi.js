@@ -20,7 +20,7 @@ async function fetchData() {
         dataContainer.textContent = definition;
     } catch (error) {
         console.error('Error fetching data:', error);
-        
+
         const dataContainer = document.getElementById('dataContainer');
         dataContainer.textContent = 'Error fetching data. Please try again later.';
     }
@@ -28,3 +28,36 @@ async function fetchData() {
 
 fetchData();
 updateCount();
+
+document.addEventListener("DOMContentLoaded", function() {
+    
+    let modal = document.getElementById('feedbackModal');
+    let btn = document.getElementById("openModalBtn");
+    let span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+   
+    document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+        
+        let email = document.getElementById("email").value;
+        let feedback = document.getElementById("feedback").value;
+
+        console.log("Email:", email);
+        console.log("Feedback:", feedback);
+      
+        modal.style.display = "none";
+    });
+});

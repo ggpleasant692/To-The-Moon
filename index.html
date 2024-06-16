@@ -136,5 +136,25 @@
     </section>
         <button><a href=index.html>Home</a></button>
     </div>  
+
+   <section>
+
+<button id="openModalBtn">Give Feedback</button>
+
+<section id="feedbackModal" class="modal">
+    <article class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Feedback Form</h3>
+        <form id="feedbackForm">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </article>
+</section>
 </body>
 </html>
