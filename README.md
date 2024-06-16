@@ -21,4 +21,4 @@ Inline CSS utilized for feedback modal styling.
 # Links
 https://github.com/ggpleasant692/To-The-Moon.git
 
-Deployed link
+https://ggpleasant692.github.io/To-The-Moon/index.html
