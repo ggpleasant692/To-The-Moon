@@ -5,29 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To The Moon</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-    
     <script src="./assets/results.js"></script>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
-<body>
-    <h3>To The Moon</h3>
-    <input type="string" id="query" name="query" placeholder="Search by Artist..." />
-    
-    <button id="btn" onclick = "changePage()">></button>
+<body class="has-background-grey-lighter">
+    <h1 class="has-text-primary-00 has-text-centered">To The Moon: A galaxy of artists' discographies</h1>
+    <nav class = "menu has-text-centered">
+        <ul> 
+            <li><a href="#music-genre-defintion">Genre Definition</a></li>
+            <li><a href="#list-of-genres">List of genres</a></li>
+            <li><a href="#discography-definition">Discography Definition</a></li>   
+            <li><a href="#discography-results">Discography Search</a></li>  
+        </ul>    
+        </nav>
+  
+
+    <section>
+        <h2 id="#music-genre-defintion" class="has-background-link has-text-centered has-text-primary-00">What is a Music Genre?</h2>
+        <p class="has-text-primary-00">A music genre is like a distinct flavor or style of music. It's a way of categorizing music based on shared characteristics like rhythm, melody, instrumentation, and cultural influences. Each genre has its own unique sound and vibe, and it often reflects the cultural background and artistic expression of the musicians who create it. From the catchy beats of pop to the raw energy of rock and the intricate melodies of classical, music genres help us navigate the vast and diverse world of music, allowing us to find the sounds that resonate with us the most.</p>
+     </section>
+  
+     <input type="string" id="query" name="query" placeholder="Search by Artist..." />
+    <button class="button is-danger button is-danger is-rounded button is-info is-small" id="btn" onclick = "changePage()">Search</button>
     
     <section class="content">
         <article id="video player" class="player">
-                   
-            <h1 id="artName">Music Genres</h1>
-                <p id="video"> Video explaining different music genres changing to artist music video on click </p>              
+            <section class="has-background-danger"> 
+            <h2 id="artName" class="has-background-link has-text-centered has-text-primary-00"> List of Music Genres</h2>
+
+            <ol id="#list-of-genres" class="has-text-primary-00">
+                <li>Classical
+                    <ul>
+                        <li>Baroque</li>
+                        <li>Classical Period</li>
+                        <li>Romantic</li>
+                        <li>Contemporary Classical</li>
+                    </ul>
+                </li>
+                <li>Rock
+                  <ul>
+                    <li>Classic Rock</li>
+                    <li>Alternative Rock</li>
+                    <li>Punk Rock</li>
+                    <li>Heavy Metal</li>
+                    <li>Indie Rock</li>
+                  </ul>
+                </li>
+                <li>Jazz
+                    <ul>
+                    <li>Traditional Jazz</li>
+                    <li>Swing</li>
+                    <li>Bebop</li>
+                    <li>Fusion</li>
+                    </ul>
+                </li>
+
+                <li>Pop
+                    <ul>
+                        <li>Pop-Rock</li>
+                        <li>Dance-Pop</li>
+                        <li>Synthpop</li>
+                        <li>Bubblegum Pop</li>
+                    </ul>
+                </li>
+                <li>Electronic
+                    <ul>
+                        <li>Techno</li>
+                        <li>House</li>
+                        <li>Trance</li>
+                        <li>Dubstep</li>
+                    </ul>
+                </li>
+
+                <li>Hip-Hop</li>
+                <ul>
+                    <li>East Coast Hip-Hop</li>
+                    <li>West Coast Hip-Hop</li>
+                    <li>Trap</li>
+                    <li>Boom Bap</li>
+                </ul>
+                <li>Country</li>
+                <ul>
+                    <li>Classic Country</li>
+                    <li>Bluegrass</li>
+                    <li>Country Pop</li>
+                    <li>Honky-Tonk</li>
+                </ul>
+                <li>Folk</li>
+                <ul>
+                    <li>Traditional Folk</li>
+                    <li>Contemporary Folk</li>
+                    <li>Folk Rock</li>
+                    <li>Americana</li>
+                </ul>
+                <li>Blues</li>
+                <ul>
+                    Delta Blues</li>
+                    <li>Chicago Blues</li>
+                    <li>Electric Blues</li>
+                    <li>Blues Rock</li>
+                </ul>
+                <li>World Music</li>
+                <ul>
+                    Reggae</li>
+                    <li>Salsa</li>
+                    <li>Flamenco</li>
+                    <li>Bollywood</li>
+                </ul>
+                
+              </ol>
+            </section>
+
+            <section>
+                
+            </section>
+            <section class="has-background-link">
+                <h2 class="has-text-centered">What is a discography?</h2>
+            </section>
+            <article id="discography-definition">
+
+          
+            <section id="dataContainer" class="has-text-centered">
+                
+        
+            </section>
+        </article>
+            <script src="./assets/ytapi.js"></script>       
         </article>    
     </section>
 
     <div id="results">
-        <h3>Discography</h3>
+        <h2>Discography</h2>
             <p id="discography"></p>
         <button><a href=index.html>Home</a></button>
     </div>  
+  
+    
+   
 
+    
 </body>
 </html>
